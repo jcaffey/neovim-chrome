@@ -2,12 +2,13 @@
 
 The concept works, but that's about it. I think this could be really useful with a bit of love.
 
-## Server
+## Add directory to chrome extensions
+
+## Start server
 websocat -t ws-l:127.0.0.1:8080 broadcast:mirror: --exit-on-eof
 
-## Send to server from vim
+## Write something in vim
+Click on a text area in chrome, go to vim, execute code below.
+
+## Send document to socket server from vim
 `:%!websocat ws://localhost:8080`
-
-## Usage
-Select a text area, go to vim, execute code above.
-
